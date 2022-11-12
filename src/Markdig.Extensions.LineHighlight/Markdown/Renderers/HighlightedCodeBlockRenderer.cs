@@ -11,10 +11,8 @@ namespace Markdig.Extensions.LineHighlight.Markdown.Renderers
 {
     public class HighlightedCodeBlockRenderer : HtmlObjectRenderer<CodeBlock>
     {
-        public bool OutputAttributesOnPre { get; set; }
-
         public HashSet<string> BlocksAsDiv { get; }
-
+        
         public HighlightedCodeBlockRenderer()
         {
             BlocksAsDiv = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
@@ -25,7 +23,6 @@ namespace Markdig.Extensions.LineHighlight.Markdown.Renderers
             renderer.EnsureLine();
 
             var fencedCodeBlock = codeBlock as FencedCodeBlock;
-
             if (fencedCodeBlock?.Info != null && BlocksAsDiv.Contains(fencedCodeBlock.Info))
             {
                 var infoPrefix = (codeBlock.Parser as FencedCodeBlockParser)?.InfoPrefix ??
@@ -52,18 +49,9 @@ namespace Markdig.Extensions.LineHighlight.Markdown.Renderers
                 {
                     renderer.Write("<pre ");
 
-                    if (OutputAttributesOnPre)
-                    {
-                        renderer.WriteAttributes(codeBlock);
-                    }
-
                     WriteHighlightedCodeLines(renderer, fencedCodeBlock);
 
-                    if (!OutputAttributesOnPre)
-                    {
-                        renderer.WriteAttributes(codeBlock);
-                    }
-
+                    renderer.WriteAttributes(codeBlock);
                     renderer.Write('>');
                 }
 
@@ -101,7 +89,7 @@ namespace Markdig.Extensions.LineHighlight.Markdown.Renderers
 
         private HashSet<int> GetHighlightedLines(FencedCodeBlock fencedCodeBlock)
         {
-            var pattern = @"\{([^}]+)\}";
+            const string pattern = @"\{([^}]+)\}";
 
             var highlightedLines = new HashSet<int>();
             if (string.IsNullOrWhiteSpace(fencedCodeBlock?.Arguments) || 
@@ -120,7 +108,7 @@ namespace Markdig.Extensions.LineHighlight.Markdown.Renderers
             var lines = groups[1].Value.Split(",");
             foreach (var line in lines)
             {
-                if (line.Contains("-"))
+                if (line.Contains('-'))
                 {
                     var numbers = line.Split("-");
                     if (numbers.Length > 2)

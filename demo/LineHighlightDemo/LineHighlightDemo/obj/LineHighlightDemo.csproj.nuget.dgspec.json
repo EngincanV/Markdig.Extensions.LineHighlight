@@ -1,0 +1,143 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Github\\Markdig.Extensions.LineHighlight\\demo\\LineHighlightDemo\\LineHighlightDemo\\LineHighlightDemo.csproj": {}
+  },
+  "projects": {
+    "D:\\Github\\Markdig.Extensions.LineHighlight\\demo\\LineHighlightDemo\\LineHighlightDemo\\LineHighlightDemo.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Github\\Markdig.Extensions.LineHighlight\\demo\\LineHighlightDemo\\LineHighlightDemo\\LineHighlightDemo.csproj",
+        "projectName": "LineHighlightDemo",
+        "projectPath": "D:\\Github\\Markdig.Extensions.LineHighlight\\demo\\LineHighlightDemo\\LineHighlightDemo\\LineHighlightDemo.csproj",
+        "packagesPath": "C:\\Users\\Engincan Veske\\.nuget\\packages\\",
+        "outputPath": "D:\\Github\\Markdig.Extensions.LineHighlight\\demo\\LineHighlightDemo\\LineHighlightDemo\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Engincan Veske\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.abp.io/BF711607-E213-4482-9F31-036CC79C285A/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Github\\Markdig.Extensions.LineHighlight\\src\\Markdig.Extensions.LineHighlight\\Markdig.Extensions.LineHighlight.csproj": {
+                "projectPath": "D:\\Github\\Markdig.Extensions.LineHighlight\\src\\Markdig.Extensions.LineHighlight\\Markdig.Extensions.LineHighlight.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Github\\Markdig.Extensions.LineHighlight\\src\\Markdig.Extensions.LineHighlight\\Markdig.Extensions.LineHighlight.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Github\\Markdig.Extensions.LineHighlight\\src\\Markdig.Extensions.LineHighlight\\Markdig.Extensions.LineHighlight.csproj",
+        "projectName": "Markdig.Extensions.LineHighlight",
+        "projectPath": "D:\\Github\\Markdig.Extensions.LineHighlight\\src\\Markdig.Extensions.LineHighlight\\Markdig.Extensions.LineHighlight.csproj",
+        "packagesPath": "C:\\Users\\Engincan Veske\\.nuget\\packages\\",
+        "outputPath": "D:\\Github\\Markdig.Extensions.LineHighlight\\src\\Markdig.Extensions.LineHighlight\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Engincan Veske\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.abp.io/BF711607-E213-4482-9F31-036CC79C285A/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Markdig": {
+              "target": "Package",
+              "version": "[0.30.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

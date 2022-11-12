@@ -1,0 +1,28 @@
+﻿@using Markdig
+@using Markdig.Extensions.LineHighlight.Extensions
+@using System.Text
+@{
+    ViewData["Title"] = "Home Page";
+    
+    var text = new StringBuilder();
+    text.AppendLine("```csharp {2}");
+    text.AppendLine("public class HelloWorld");
+    text.AppendLine("{");
+    text.AppendLine("\tpublic void ShowMessage()");
+    text.AppendLine("\t{");
+    text.AppendLine("\t\tConsole.WriteLine('Hello World');");
+    text.AppendLine("\t}");
+    text.AppendLine("}");
+    text.AppendLine("```");
+    
+    var pipeline = new MarkdownPipelineBuilder().UseHighlightedCodeBlocks().Build();
+    var result = Markdown.ToHtml(text.ToString(), pipeline);
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    
+    <div>
+        @Html.Raw(result)
+    </div>
+</div>

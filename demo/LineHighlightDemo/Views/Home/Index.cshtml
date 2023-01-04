@@ -4,8 +4,9 @@
 @{
     ViewData["Title"] = "Home Page";
     
+    //Markdown Example
     var text = new StringBuilder();
-    text.AppendLine("```csharp {2}");
+    text.AppendLine("```csharp {3}");
     text.AppendLine("public class HelloWorld");
     text.AppendLine("{");
     text.AppendLine("\tpublic void ShowMessage()");
@@ -15,13 +16,13 @@
     text.AppendLine("}");
     text.AppendLine("```");
     
-    var pipeline = new MarkdownPipelineBuilder().UseHighlightedCodeBlocks().Build();
+    var pipeline = new MarkdownPipelineBuilder()
+        .UseHighlightedCodeBlocks() //use highlighted kod blocks 
+        .Build();
     var result = Markdown.ToHtml(text.ToString(), pipeline);
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    
     <div>
         @Html.Raw(result)
     </div>

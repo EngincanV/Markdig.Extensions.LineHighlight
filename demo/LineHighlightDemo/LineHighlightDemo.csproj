@@ -7,7 +7,7 @@
     </PropertyGroup>
     
     <ItemGroup>
-        <ProjectReference Include="../../../src/Markdig.Extensions.LineHighlight/Markdig.Extensions.LineHighlight.csproj" />
+        <ProjectReference Include="../../src/Markdig.Extensions.LineHighlight/Markdig.Extensions.LineHighlight.csproj" />
     </ItemGroup>
 
 </Project>

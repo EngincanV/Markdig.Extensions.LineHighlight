@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LineHighlightDemo", "LineHighlightDemo\LineHighlightDemo.csproj", "{098EB25D-0C32-4DEC-A142-E2CCF0BF961A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LineHighlightDemo", "LineHighlightDemo.csproj", "{098EB25D-0C32-4DEC-A142-E2CCF0BF961A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

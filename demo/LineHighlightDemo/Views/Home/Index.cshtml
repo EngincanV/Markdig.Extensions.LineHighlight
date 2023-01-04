@@ -17,7 +17,7 @@
     text.AppendLine("```");
     
     var pipeline = new MarkdownPipelineBuilder()
-        .UseHighlightedCodeBlocks() //use highlighted kod blocks 
+        .UseHighlightedCodeBlocks() //use highlighted code blocks 
         .Build();
     var result = Markdown.ToHtml(text.ToString(), pipeline);
 }

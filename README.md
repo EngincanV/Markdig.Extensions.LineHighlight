@@ -1,6 +1,6 @@
 # Markdig.Extensions.LineHighlight
 
-This package can be used for code line highlighting. It uses [Prism](https://prismjs.com/) for highlighting.
+This package can be used to highlight code lines. It uses [Prism](https://prismjs.com/) for highlighting.
 
 ## Installation & Configuration
 

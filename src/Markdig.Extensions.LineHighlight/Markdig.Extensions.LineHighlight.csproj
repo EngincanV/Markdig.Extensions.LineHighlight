@@ -2,11 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <PackageId>Markdig.Extensions.LineHighlight</PackageId>
+    <PackageId>CodeLineHighlight</PackageId>
     <Version>1.0.0</Version>
     <Authors>Engincan Veske</Authors>
     <PackageDescription>This package can be used for code line highlighting.  It uses Prism for highlighting.</PackageDescription>
     <RepositoryUrl>https://github.com/EngincanV/Markdig.Extensions.LineHighlight</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>

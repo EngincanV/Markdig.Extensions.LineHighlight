@@ -7,7 +7,7 @@ This package can be used to highlight code lines. It uses [Prism](https://prismj
 1. Install the package:
 
 ```bash
-dotnet add package Markdig.Extensions.LineHighlight
+dotnet add package CodeLineHighlight --version 1.0.0
 ```
 
 2. Download prism.js for code-highlighting support and put it into your libs folder:

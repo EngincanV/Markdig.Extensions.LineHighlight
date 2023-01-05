@@ -46,6 +46,8 @@ Let's assume you have markdown content and want to highlight the 3rd line. You c
    \```
 ```
 
+> You can specify more than one line to highlight and also specify line intervals to highlight. For example, `csharp {3-5, 7}` with such use, the 3rd, 4th, 5th and 7th lines will be highlighted.
+
 To render this markdown as HTML, you can use `Markdown.ToHtml` method. This method basically gets two parameters: the first one is the markdown content and the second one is a pipeline, which can be considered custom steps that we want to apply while rendering the content as HTML.
 
 You need to add [HighlightedCodeBlockExtension](https://github.com/EngincanV/Markdig.Extensions.LineHighlight/blob/main/src/Markdig.Extensions.LineHighlight/Markdown/Extensions/HighlightedCodeBlockExtension.cs#L8) to this pipeline to the benefit of code-highlighting. For this purpose, you can use the `UseHighlightedCodeBlocks` method while building the pipeline and passing it through the `Markdown.ToHtml` method as below:
